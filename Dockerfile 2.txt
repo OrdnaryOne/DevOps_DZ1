@@ -1,0 +1,5 @@
+# Сборка официального образа PostgreSQL
+FROM postgres:latest
+
+# Копирование скриптов инициализации
+COPY init.sql /docker-entrypoint-initdb.d/
